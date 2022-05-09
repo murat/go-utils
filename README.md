@@ -30,6 +30,8 @@ func main() {
 	fmt.Println(strings.Capitalize("hello world")) // Hello World
 	// CamelCase
 	fmt.Println(strings.ToCamelCase("hello world")) // helloWorld
+	// SnakeCase
+	fmt.Println(strings.ToSnakeCase("hello world")) // hello_world
 	// Deburr
 	fmt.Println(strings.Deburr("éàèù")) // eaeu
 	// KebabCase
