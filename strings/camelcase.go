@@ -4,6 +4,7 @@ import (
 	"unicode"
 )
 
+// ToCamelCase converts a string to camelCase.
 func ToCamelCase(s string) string {
 	var b []rune
 	var upper bool

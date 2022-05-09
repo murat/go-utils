@@ -1,6 +1,10 @@
-package strings
+package strings_test
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/murat/go-utils/strings"
+)
 
 func TestKebabCase(t *testing.T) {
 	tests := []struct {
@@ -18,7 +22,7 @@ func TestKebabCase(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.input, func(t *testing.T) {
-			if got := KebabCase(tt.input); got != tt.output {
+			if got := strings.ToKebabCase(tt.input); got != tt.output {
 				t.Errorf("KebabCase() = %v, want %v", got, tt.output)
 			}
 		})

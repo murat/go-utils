@@ -2,7 +2,8 @@ package strings
 
 import "unicode"
 
-func KebabCase(s string) string {
+// ToKebabCase converts a string to kebab-case.
+func ToKebabCase(s string) string {
 	b := []rune{}
 	for _, r := range s {
 		if !unicode.IsLetter(r) && (r == '_' || r == '-' || r == ' ') {

@@ -2,6 +2,7 @@ package strings
 
 import "unicode"
 
+// Capitalize capitalizes the first letters of a string.
 func Capitalize(s string) string {
 	var b []rune
 	var upper bool
