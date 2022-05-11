@@ -46,6 +46,8 @@ func main() {
 }
 ```
 
+## Contribute
+
 All contributors are welcome to contribute to this project.
 
 Cheers :beer:
