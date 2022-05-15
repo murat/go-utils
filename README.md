@@ -43,6 +43,10 @@ func main() {
 	fmt.Println(strings.PadLeftWith("hello", 20, "-"))  // |---------------hello|
 	fmt.Println(strings.PadRight("hello", 20))          // |hello               |
 	fmt.Println(strings.PadRightWith("hello", 20, "-")) // |hello---------------|
+	
+	// Slices
+	fmt.Println(slices.Contains([]interface{}{"a", "b", "c"}, "b")) // true
+	fmt.Println(slices.Contains([]interface{}{"a", "b", "c"}, "x")) // false
 }
 ```
 
