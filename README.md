@@ -44,7 +44,7 @@ func main() {
 	fmt.Println(strings.PadRight("hello", 20))          // |hello               |
 	fmt.Println(strings.PadRightWith("hello", 20, "-")) // |hello---------------|
 	
-	// Slices
+	// Slices (>1.18 needs generics)
 	fmt.Println(slices.Contains([]interface{}{"a", "b", "c"}, "b")) // true
 	fmt.Println(slices.Contains([]interface{}{"a", "b", "c"}, "x")) // false
 }
