@@ -47,6 +47,10 @@ func main() {
 	// Slices (>1.18 needs generics)
 	fmt.Println(slices.Contains([]interface{}{"a", "b", "c"}, "b")) // true
 	fmt.Println(slices.Contains([]interface{}{"a", "b", "c"}, "x")) // false
+	
+	fmt.Println(slices.Shuffle([]string{"a", "b", "c"})) // [c b a]
+	fmt.Println(slices.Shuffle([]int{1, 2, 3})) // [2 3 1]
+	fmt.Println(slices.Shuffle([]interface{}{1, "hello", 3})) // [hello 3 1]
 }
 ```
 
